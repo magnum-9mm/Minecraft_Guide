@@ -406,3 +406,21 @@ p a {
 a{
 	text-decoration: none;
 }
+
+.nav-container {
+	/*background-image: linear-gradient(to left, #F65058FF,#FBDE44FF,#28334AFF);  */
+	background-color: rgb(255, 255, 255);
+	width: 5%;
+	  position: fixed;
+	  left:90%; 
+		border: solid rgba(26, 25, 25, 0.575) 5px;
+		border-top-right-radius:  25px;
+		border-top-left-radius: 25px; 
+		border-bottom-left-radius: 25px;
+		border-bottom-right-radius: 25px;
+	}
+	  nav
+		 {
+		  text-align: center;
+	  margin: 0px auto; 
+		}
