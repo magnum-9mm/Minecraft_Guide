@@ -14,7 +14,7 @@
 	font-style: normal;
 }
 body {
-	background-color: #16161d;
+	background-color: #fff;
 	font-family: 'OpenSans';
 	margin: 0;
 }
@@ -424,3 +424,8 @@ a{
 		  text-align: center;
 	  margin: 0px auto; 
 		}
+	
+
+
+		/* Unrelated to above only for login*/
+		
