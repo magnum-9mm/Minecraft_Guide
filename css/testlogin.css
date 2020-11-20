@@ -428,106 +428,28 @@ a{
 
 
 		/* Unrelated to above only for login*/
-		.nav-container {
-            /*background-image: linear-gradient(to left, #F65058FF,#FBDE44FF,#28334AFF);  */
-            background-color: #FFD653FF;
-            width: 98%;
-              position: fixed;
-              left:0.75%; 
-                border: solid #DDB65DFF 5px;
-                border-top-right-radius:  25px;
-                border-top-left-radius: 25px; 
-                border-bottom-left-radius: 25px;
-                border-bottom-right-radius: 25px;
-            }
-              /*nav
-                 {
-                  text-align: center;
-                  width: 640px;
-              margin: 0px auto; 
-                }
-            
-                .login
-                {
-                background-color: #343148FF;
-              font-size: 40px; 
-              color: #ffffff;
-              text-align: left;
-              text-decoration: none;
-             
-                }
-            .links
-            { 
-                font-size: 40px; 
-                  text-align: center;	
-              
-             }
-             
-            .home1
-            {	
-                color: #ADEFD1FF;
-                font-size: 25px; 
-                text-align: justify;
-                padding: 20px;
-            }
-            
-            h1
-            {	
-                  text-align: center;	
-                  font-size: 72px;
-                  background: -webkit-linear-gradient(-135deg, #606060FF, #D6ED17FF,#ffffff, #16161d);
-                  -webkit-background-clip: text;
-                  -webkit-text-fill-color: transparent;
-                  padding-top: 30px;
-                /*color:#DAA03DFF;
-				padding-top: 30px;
-			}
-                /*background-image: linear-gradient(to left, red,cyan,yellow,green,blue,indigo,violet);*/
-            
-            
-            /*.head
-            {
-                font-size: 100px;
-            }
-            .login
-            {
-                text-align: center;	
-                  font-size: 72px;
-                  background: -webkit-linear-gradient(-135deg, #606060FF, #D6ED17FF,#ffffff, #16161d);
-                  -webkit-background-clip: text;
-                  -webkit-text-fill-color: transparent;
-                  padding-top: 60px;
-                  display: inline-block; 
-            
-            }
-            
-            form
-            {
-                text-align: center;
-                font-size: 50px;
-                
-            }*/
+
             input
             {
                 text-align: center;
                 font-size: inherit;
                 padding: 10px;
                 margin:  10px;
-                border: solid #A13941FF 3px;
+                border: solid #ADEFD1FF 3px;
                 border-top-right-radius:  2px;
                 border-top-left-radius: 25px; 
                 border-bottom-left-radius: 2px;
                 border-bottom-right-radius: 25px;
-                background-image: linear-gradient(to left, #F0E1B9FF,#F3DB74FF)
+                background-image: linear-gradient(to left, #B1B3B3FF,#A2A2A1FF)
             
             }
             input[type="button"]
              {
-                 background-image: linear-gradient(to left, #FFD653FF,#EEB238FF)
+                 background-image: linear-gradient(to left, #6E6E6DFF,#2D2926FF)
             
              }
              input:focus{
-                background-image: linear-gradient(to left, #DDB65DFF,#6E4C1EFF)
+                background-image: linear-gradient(to left, #FAEBEFFF,#F2EDD7FF)
              }
             
             
