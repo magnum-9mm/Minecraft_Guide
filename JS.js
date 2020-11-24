@@ -2,7 +2,7 @@
     LOGIN SECTION
 */
 
-function login(f) {
+function validateForm(f) {
     var RE_Name = /^[a-zA-Z]$/;
     var i;
     for (i = 0; i < f.elements.length; i++) {

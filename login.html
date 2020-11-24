@@ -1,55 +1,84 @@
 <html>
-    <head>
-        <title>Login/Sign Up - Minecraft Guide</title>
-                <link rel="stylesheet" href="css/style.css" type="text/css">
 
-    </head>
-    <body>
-        <div id="header">
-            <div>
-                <div class="logo">
-                    <a href="index.html"><br>&nbsp&nbsp&nbspMinecraft</a>
-                    <link rel="icon" type="image/jpg" href="images/logMC_title.png">	<title>Features - Minecraft Guide</title>
+<head>
+    <title>Login/Sign Up - Minecraft Guide</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script-->
 
-                </div>
-                <ul id="navigation">
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li class="active">
-                        <a href="features.html">Features</a>
-                    </li>
-                    <li>
-                        <a href="news.html">News</a>
-                    </li>
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
-                </ul>
+</head>
+
+<body>
+    <div id="header">
+        <div>
+            <div class="logo">
+                <a href="index.html"><br>&nbsp&nbsp&nbspMinecraft</a>
+                <link rel="icon" type="image/jpg" href="images/logMC_title.png">
+                <title>Features - Minecraft Guide</title>
+
             </div>
+            <ul id="navigation">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="active">
+                    <a href="features.html">Features</a>
+                </li>
+                <li>
+                    <a href="news.html">News</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
         </div>
-        <div id="contents">   
-                    <input type="text" placeholder="First Name" name="name">
-                    <input type="text" placeholder="Last Name" name="name"><br>
-                    <input type="text" placeholder="Username" name="name"><br>
-                    <input type="email" placeholder="E-mail Address" name="name"><br>
-                    <input type="email" placeholder="Confirm E-mail Address" name="name"><br>
-                    <input type="password" placeholder="New Password" name="name"><br>
-                    <input type="password" placeholder="Confirm Password" name="name"><br>
-                    <input type="button" value="Submit" name="name" onclick="hell()">    
-         </div>
-        <div id="footer">
-            <div class="clearfix">
-                <div id="connect">
-                    <a href="http://freewebsitetemplates.com/go/facebook/" target="_blank" class="facebook"></a><a href="http://freewebsitetemplates.com/go/googleplus/" target="_blank" class="googleplus"></a><a href="http://freewebsitetemplates.com/go/twitter/" target="_blank" class="twitter"></a><a href="http://www.freewebsitetemplates.com/misc/contact/" target="_blank" class="tumbler"></a>
+    </div>
+    <h1 style=text-align:center>Log in!</h1>
+
+    <div class="container" style="margin-top: 100px">
+        <form name="myForm" action="login.jsp" method="POST">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
                 </div>
-                <p>
-                    © 2023 Zerotype. All Rights Reserved.
-                </p>
+                <div class="form-group col-md-6">
+                    <label for="inputPassword4">Password</label>
+                    <input type="password" minlength=7 maxlength=14 class="form-control" name="pwd" id="pass" placeholder="Password" required>
+                </div>
             </div>
+
+            <button type="submit" class="btn btn-primary" onclick="validate()">Log in</button>
+        </form>
+    </div>
+    <p style=text-align:center>Don't have an account? <a href="signup.html">Signup</a></p>
+    <!--<div id="contents">
+        <input type="text" placeholder="First Name" name="name">
+        <input type="text" placeholder="Last Nawe" name="name"><br>
+        <input type="text" placeholder="Username" name="name"><br>
+        <input type="email" placeholder="E-mail Address" name="name"><br>
+        <input type="email" placeholder="Confirm E-mail Address" name="name"><br>
+        <input type="password" placeholder="New Password" name="name"><br>
+        <input type="password" placeholder="Confirm Password" name="name"><br>
+        <input type="button" value="Sign Up" name="name" onclick="hell()">
+        <input type="button" value="Login" </div-->
+    <div id="footer">
+        <div class="clearfix">
+            <div id="connect">
+                <a href="http://freewebsitetemplates.com/go/facebook/" target="_blank" class="facebook"></a>
+                <a href="http://freewebsitetemplates.com/go/googleplus/" target="_blank" class="googleplus"></a>
+                <a href="http://freewebsitetemplates.com/go/twitter/" target="_blank" class="twitter"></a>
+                <a href="http://www.freewebsitetemplates.com/misc/contact/" target="_blank" class="tumbler"></a>
+            </div>
+            <p>
+                © 2023 Zerotype. All Rights Reserved.
+            </p>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>
