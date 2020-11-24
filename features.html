@@ -3,11 +3,107 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<link rel="icon" type="image/jpg" href="images/logMC_title.png">	<title>Features - Minecraft Guide</title>
+	<link rel="icon" type="image/jpg" href="images/logMC_title.png">	
+	<title>Features - Minecraft Guide</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="css/text.css"/>
+    <link rel="stylesheet" type="text/css" href="css/960.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css"/>
+    <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Press+Start+2P'/>
 </head>
 <body>
 	<div id="header">
+        <div>
+            <div class="logo">
+                <a href="index.html"><br>&nbsp&nbsp&nbspMinecraft</a>
+                <link rel="icon" type="image/jpg" href="images/logMC_title.png">
+                <title>Features - Minecraft Guide</title>
+
+            </div>
+            <ul id="navigation">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="active">
+                    <a href="features.html">Features</a>
+                </li>
+               
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+	<body class="container_12">
+		
+	
+		  <div id="crafting">
+			<h1><img src="images/workbench_top.png"> Crafting</h1>
+			<p>I want to make
+			  <select id="crafting_count">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="4">4</option>
+				<option value="8">8</option>
+				<option value="16">16</option>
+				<option value="32">32</option>
+				<option value="64">64</option>
+			  </select>
+			  <input id="crafting_selector"></input>
+			  <input id="tools_included" name="tools_included" type="checkbox"></input>
+			  <label for="tools_included">include tools</label>
+			</p>
+			<table id="crafting_output" class="crafting_output hidden" cellpadding="0" cellspacing="0">
+			  <tr>
+				<th width="25%">I already have:</th>
+				<th width="25%">You'll need to find:</th>
+				<th width="25%">You'll need to make:</th>
+				<th width="25%">You'll end up with:</th></tr>
+			  <tr>
+				<td><textarea id="inventory" style="height: 100%; width: 100%" placeholder="2 Oak Log"></textarea></td>
+				<td><table id="missing_materials" cellpadding="0" cellspacing="0" class="manifest"></table></td>
+				<td><table id="crafted_items" cellpadding="0" cellspacing="0" class="manifest"></table></td>
+				<td><table id="leftover_materials" cellpadding="0" cellspacing="0" class="manifest"></table></td>
+			  </tr>
+			</table>
+			<div id="crafting_error" class="error"></div>
+		  </div> 
+	
+		 
+		   
+	
+		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+		<script src="script/purl.js"></script>
+		<script src="script/crafting.js"></script>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	
+		  ga('create', 'UA-5871323-4', 'crafting-guide.com');
+		  ga('send', 'pageview');
+		</script>
+  <div id="footer">
+	<div class="clearfix">
+		<div id="connect">
+			<a href="http://freewebsitetemplates.com/go/facebook/" target="_blank" class="facebook"></a>
+			<a href="http://freewebsitetemplates.com/go/googleplus/" target="_blank" class="googleplus"></a>
+			<a href="http://freewebsitetemplates.com/go/twitter/" target="_blank" class="twitter"></a>
+			<a href="http://www.freewebsitetemplates.com/misc/contact/" target="_blank" class="tumbler"></a>
+		</div>
+		<p>
+			© 2023 Zerotype. All Rights Reserved.
+		</p>
+	</div>
+</div>
+	<!--div id="header">
 		<div>
 			<div class="logo">
 				<a href="index.html"><br>&nbsp&nbsp&nbspMinecraft</a>
@@ -32,7 +128,7 @@
 		</div>
 	</div>
 
-	<style>
+	<!--style>
 		* {
 		  box-sizing: border-box;
 		}
@@ -85,11 +181,11 @@
 		.card1:hover {
 		  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 		}
-		</style>
+		</style-->
 
 
 	<!-- -------------------Row1----------------------------- -->
-<div class="row">
+<!-- div class="row">
 	<div class="column">
 	  <div class="card">
 		<h1><a href="biomes.html"><img src="images/Biomes.jpg" alt="Avatar" style="width:100%">Biomes</a></h1>
@@ -117,7 +213,7 @@
 	<!-- -------------------Row2----------------------------- -->
 
 
-<div class="row">
+<!-- div class="row">
 	<div class="column">
 	  <div class="card">
 		<h1><a href ="Advancements.html"><img src="images/Advancements.png" alt="Avatar" style="width:100%">Advancements</a></h1>
@@ -143,7 +239,7 @@
 </div>
 
 	<!-- -------------------Row3----------------------------- -->
-<div class="row">
+<!--div class="row">
 	<div class="column">
 	  <div class="card">
 		<h1><a href="Mods.html"><img src="images/Blocks.png" alt="Avatar" style="width:100%">Mods</a></h1>
@@ -280,7 +376,7 @@
 			</div>
 		</div>
 	</div-->
-	<div id="footer">
+	<!--div id="footer">
 		<div class="clearfix">
 			<div id="connect">
 				<a href="http://freewebsitetemplates.com/go/facebook/" target="_blank" class="facebook"></a><a href="http://freewebsitetemplates.com/go/googleplus/" target="_blank" class="googleplus"></a><a href="http://freewebsitetemplates.com/go/twitter/" target="_blank" class="twitter"></a><a href="http://www.freewebsitetemplates.com/misc/contact/" target="_blank" class="tumbler"></a>
@@ -289,6 +385,6 @@
 				© 2023 Zerotype. All Rights Reserved.
 			</p>
 		</div>
-	</div>
+	</div-->
 </body>
 </html>
